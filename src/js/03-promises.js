@@ -20,10 +20,6 @@ function createPromise(position, delay) {
   });
 }
 
-// Number(refs.inputDelay.value);
-// Number(refs.inputAmount.value);
-// Number(refs.inputStep.value);
-
 function sumbitPromise(evt) {
   evt.prevenDefault();
   let prevDelay;
