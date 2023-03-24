@@ -41,14 +41,14 @@ img {
 
 .field {
   padding: 12px;
-  border-radius: 2px;
+  border-radius: 15px;
   background: #18caa3;
   display: inline-block;
 }
 
 .value {
   padding: 18px;
-  border-radius: 2px;
+  border-radius: 15px 25px 15px 25px;
   background: #137564;
   display: inline-block;
   box-shadow: 10px 5px 5px red;
