@@ -47,7 +47,7 @@ startButton.addEventListener('click', () => {
     minutesElement.innerText = addLeadingZero(time.minutes);
     secondsElement.innerText = addLeadingZero(time.seconds);
     // Stop the timer when it reaches the end date
-    if (timeRemaining <= 1) {
+    if (timeRemaining <= 1000) {
       clearInterval(interval);
     }
   }, 1000);

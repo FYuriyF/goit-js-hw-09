@@ -10,10 +10,15 @@ function changeBackgroundColor() {
   document.body.style.backgroundColor = getRandomHexColor();
 }
 startButton.addEventListener('click', () => {
-  if (intervalId) return;
-  intervalId = setInterval(changeBackgroundColor, 1000);
+  if (!intervalId) {
+    intervalId = setInterval(changeBackgroundColor, 1000);
+    startButton.disabled = true;
+  }
+
+  console.log(1);
 });
 
 stopButton.addEventListener('click', () => {
   intervalId = clearInterval(intervalId);
+  startButton.disabled = false;
 });
